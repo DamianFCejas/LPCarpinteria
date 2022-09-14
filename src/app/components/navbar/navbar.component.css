@@ -1,0 +1,11 @@
+
+.banner-image {
+    background-image: url('src/assets/banner2.jpg');
+    background-size: cover;
+}
+
+.navbar_change {
+    background-color: black;
+    opacity: .8;
+    transition: all 0.5s linear 100ms;
+}
