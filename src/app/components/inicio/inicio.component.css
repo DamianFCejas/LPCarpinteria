@@ -1,0 +1,71 @@
+.separador {
+    background: #8a570f;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #F09819, #8a570f);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #F09819, #8a570f); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+/* Primer bloque */
+.primer-bloque {
+    background: url('src/assets/foto1.jpg') no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 270px;
+    width: 76%;
+        
+}
+
+.bloques-negros {
+    background: #00000071;
+    position: relative;
+    height: 25%;
+    top: 75%;
+    text-decoration: none;
+    color: #040404;
+}
+
+.bloques-negros:hover {
+    height: 100%;
+    top: 0;
+    border-top-left-radius: 2% 3%;
+    border-top-right-radius: 2% 3%;
+    transition: all 0.5s linear 100ms;
+}
+
+.titulos {
+    position: relative;
+    bottom: 0;
+    font-family: 'Architects Daughter', cursive;
+    font-size: xx-large;
+}
+
+
+/* Segundo bloque */
+.segundo-bloque {
+    background: url('src/assets/foto2.jpg') no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 380px;
+    width: 76%;
+        
+}
+
+/* Tercer bloque */
+.tercer-bloque {
+    background: url('src/assets/foto3.jpg') no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 380px;
+    width: 76%;
+        
+}
+
+/* Cuarto bloque */
+.cuarto-bloque {
+    background: url('https://http2.mlstatic.com/D_NQ_NP_2X_900940-MLA30328572226_052019-F.webp') no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 270px;
+    width: 76%;
+        
+}
