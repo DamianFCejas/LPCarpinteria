@@ -69,3 +69,44 @@
     width: 76%;
         
 }
+
+.acompaniamos {
+    padding: 20px;
+    height: auto;
+    background: #FF512F;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #F09819, #FF512F);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #F09819, #FF512F); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    font-family: 'Architects Daughter', cursive;
+    
+
+}
+
+.telarcito {
+    max-width: 50%;
+}
+
+.destacados {
+    padding: 20px;
+    height: auto;
+    background: #fc4a1a;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #f7b733, #fc4a1a);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #f7b733, #fc4a1a); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    font-family: 'Architects Daughter', cursive;
+
+}
+
+.opiniones {
+    padding: 20px;
+    height: auto;
+    background: #FEAC5E;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #4BC0C8, #FEAC5E);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #4BC0C8, #FEAC5E); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.opinion1 {
+    background: url('src/assets/inicio/cita.png') no-repeat;
+    background-size: contain;    
+}
