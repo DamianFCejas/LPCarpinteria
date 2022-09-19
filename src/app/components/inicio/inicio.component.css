@@ -110,3 +110,7 @@
     background: url('src/assets/inicio/cita.png') no-repeat;
     background-size: contain;    
 }
+
+.comercio {
+    background: white;
+}
