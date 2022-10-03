@@ -1,0 +1,133 @@
+<nav class="navbar navbar-expand-lg navbar-dark p-md-3">
+    <div class="container-fluid">
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <div class="mx-auto"></div>
+            <ul class="navbar-nav">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" routerLinkActive="active" routerLink="/productos/telares" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Filtrar por
+                    </a>
+                    <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Telares</a></li>
+                            <li><a class="dropdown-item" href="#">Agujas</a></li>
+                            <li><a class="dropdown-item" href="#">Accesorios</a></li>
+                            <li><a class="dropdown-item" href="#">Infantil</a></li>
+                    </ul>
+                </li>                
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- <nav class="navbar navbar-expand-lg bg-light">
+    <div class="container-fluid">
+        <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" routerLinkActive="active" routerLink="/productos/telares"
+                    role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Filtrar por
+                </a>
+                <ul class="dropdown-menu">
+                    <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                        <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked
+                            (click)="verCuadrados()">
+                        <label class="btn btn-outline-primary" for="btnradio1">Telares Cuadrados</label>
+
+                        <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+                        <label class="btn btn-outline-primary" for="btnradio2">Telares Triangulares</label>
+
+                        <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
+                        <label class="btn btn-outline-primary" for="btnradio3">Telares Aztecas</label>
+                    </div>
+                    <li><a class="dropdown-item" (click)="verCuadrados()">Telares Cuadrados</a></li>
+                <li><a class="dropdown-item" href="#">Telares Triangulares</a></li>
+                <li><a class="dropdown-item" href="#">Telares Aztecas</a></li>
+                <li><a class="dropdown-item" href="#">Telares de 5 Clavos</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</nav> -->
+<div class="row justify-content-evenly">
+    <div class="col-md-3 m-1" *ngIf="telarCuadrado">
+
+        <div class="card" style="width: 18rem;">
+            <img src="https://http2.mlstatic.com/D_NQ_NP_781345-MLA30328563310_052019-O.webp" class="card-img-top"
+                alt="...">
+            <div class="card-body">
+                <h5 class="card-title">telarCuadrado - Telar Cuadrado 20x20cm - Fibrofácil</h5>
+                <p class="card-text">Telar bastidor artesanal fijo
+
+                    Medidas: 20 x 20 cm.
+                    Material: MDF de 15 mm. de espesor y clavos dorados de telar
+                    Distancia entre clavos: 1cm
+
+                    Telar fabricado artesanalmente. Apto para gran variedad de técnicas de confección.
+
+                    Se retira por Villa Lugano, CABA. Se realiza envíos.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3 m-1" *ngIf="telarTriangular">
+
+        <div class="card" style="width: 18rem;">
+            <img src="https://http2.mlstatic.com/D_NQ_NP_781345-MLA30328563310_052019-O.webp" class="card-img-top"
+                alt="...">
+            <div class="card-body">
+                <h5 class="card-title">telarTriangular - Telar Cuadrado 20x20cm - Madera</h5>
+                <p class="card-text">Telar bastidor artesanal fijo
+
+                    Medidas: 20 x 20 cm.
+                    Material: MDF de 15 mm. de espesor y clavos dorados de telar
+                    Distancia entre clavos: 1cm
+
+                    Telar fabricado artesanalmente. Apto para gran variedad de técnicas de confección.
+
+                    Se retira por Villa Lugano, CABA. Se realiza envíos.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3 m-1" *ngIf="telarAzteca">
+
+        <div class="card" style="width: 18rem;">
+            <img src="https://http2.mlstatic.com/D_NQ_NP_781345-MLA30328563310_052019-O.webp" class="card-img-top"
+                alt="...">
+            <div class="card-body">
+                <h5 class="card-title">telarAzteca - Telar Cuadrado 20x20cm - Madera</h5>
+                <p class="card-text">Telar bastidor artesanal fijo
+
+                    Medidas: 20 x 20 cm.
+                    Material: MDF de 15 mm. de espesor y clavos dorados de telar
+                    Distancia entre clavos: 1cm
+
+                    Telar fabricado artesanalmente. Apto para gran variedad de técnicas de confección.
+
+                    Se retira por Villa Lugano, CABA. Se realiza envíos.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3 m-1" *ngIf="telar5Clavos">
+
+        <div class="card" style="width: 18rem;">
+            <img src="https://http2.mlstatic.com/D_NQ_NP_781345-MLA30328563310_052019-O.webp" class="card-img-top"
+                alt="...">
+            <div class="card-body">
+                <h5 class="card-title">telar5Clavos - Telar Cuadrado 20x20cm - Madera</h5>
+                <p class="card-text">Telar bastidor artesanal fijo
+
+                    Medidas: 20 x 20 cm.
+                    Material: MDF de 15 mm. de espesor y clavos dorados de telar
+                    Distancia entre clavos: 1cm
+
+                    Telar fabricado artesanalmente. Apto para gran variedad de técnicas de confección.
+
+                    Se retira por Villa Lugano, CABA. Se realiza envíos.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+        </div>
+    </div>
+</div>

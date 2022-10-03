@@ -1,3 +1,11 @@
+.banner-image {
+    background: linear-gradient(180deg,rgba(0, 0, 0, 0.7) 40%, #8a570f 100%),url('src/assets/banner2.jpg');
+    /* background-image: url('src/assets/banner2.jpg'); */
+    background-size: cover;
+    border-bottom-left-radius: 24% 56%;
+    border-bottom-right-radius: 77% 49%;
+}
+
 .separador {
     background: #8a570f;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #F09819, #8a570f);  /* Chrome 10-25, Safari 5.1-6 */

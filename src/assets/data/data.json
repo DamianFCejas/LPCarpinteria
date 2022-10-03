@@ -1,0 +1,37 @@
+{
+    "data": [
+        {"tipo":"telar",
+        "modelo":"cuadrado",
+        "tamaño":20,
+        "material":"fibrofácil",
+        "nombre":"Telar Cuadrado 20x20cm - Fibrofácil",
+        "medidas":"20 x 20 cm",
+        "tipoDeMaterial":"MDF de 15 mm. de espesor. Clavos dorados para telar de 2mm de diámetro",
+        "distanciaEntreElavos":"1cm",
+        "descripcion":"Telar fabricado artesanalmente. Apto para gran variedad de técnicas de confección. Se retira por Villa Lugano, CABA. Se realiza envíos."
+        },
+        {"tipo":"telar",
+        "modelo":"cuadrado",
+        "tamaño":20,
+        "material":"madera",
+        "nombre":"Telar Cuadrado 20x20cm - Madera",
+        "medidas":"20 x 20 cm",
+        "tipoDeMaterial":"Madera seca de alta resistencia seleccionada especialmente. Clavos dorados para telar de 2mm de diámetro",
+        "distanciaEntreElavos":"1cm",
+        "descripcion":"Telar fabricado artesanalmente. Apto para gran variedad de técnicas de confección. Se retira por Villa Lugano, CABA. Se realiza envíos."
+        },
+        {"tipo":"telar",
+        "modelo":"cuadrado",
+        "tamaño":20,
+        "material":"maderaEcologica",
+        "nombre":"Telar Cuadrado 20x20cm - Madera Ecológica",
+        "medidas":"20 x 20 cm",
+        "tipoDeMaterial":"Madera plástica de alta resis. Clavos dorados para telar de 2mm de diámetro",
+        "distanciaEntreElavos":"1cm",
+        "descripcion":"Telar fabricado artesanalmente. Apto para gran variedad de técnicas de confección. Se retira por Villa Lugano, CABA. Se realiza envíos."
+        }
+    ]
+                    
+                
+}
+

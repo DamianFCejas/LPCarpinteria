@@ -1,39 +1,204 @@
-<p>productos works!</p>
+<div class="container text-center botones">
 
-<div class="container my-5 d-grip gap-5">
-    <div class="p-5 border">
-        <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, expedita ipsam voluptate cupiditate
-            dignissimos velit recusandae perspiciatis distinctio culpa cum atque dolorem rem animi, laudantium, error
-            architecto? Officiis, perspiciatis veniam.
-        </p>
+    <button class="btn btn-dark mb-3" routerLink="/productos/telares">Telares</button>
+    <button class="btn btn-danger mb-3" routerLink="/productos/agujas">Agujas</button>
+    <button class="btn btn-dark mb-3">Accesorios</button>
+    <button class="btn btn-danger mb-3">Infantil</button>
+
+    <button class="btn btn-danger mb-3" routerLink="/productos/todosProductos">Ver todos</button>
+
+    <h2>Telares</h2>
+
+<hr>
+
+<div class="row">
+    <div class="col">
+        <table class="table table-dark">
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Material</th>
+                    <th>Descripción</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let producto of productos">
+                    <td>{{producto.nombre}}</td>
+                    <td>{{producto.material}}</td>
+                    <td>{{producto.descripcion}}</td>
+                </tr>
+            </tbody>
+        </table>
     </div>
-    <div class="p-5 border">
-        <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, expedita ipsam voluptate cupiditate
-            dignissimos velit recusandae perspiciatis distinctio culpa cum atque dolorem rem animi, laudantium, error
-            architecto? Officiis, perspiciatis veniam.
-        </p>
-    </div>
-    <div class="p-5 border">
-        <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, expedita ipsam voluptate cupiditate
-            dignissimos velit recusandae perspiciatis distinctio culpa cum atque dolorem rem animi, laudantium, error
-            architecto? Officiis, perspiciatis veniam.
-        </p>
-    </div>
-    <div class="p-5 border">
-        <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, expedita ipsam voluptate cupiditate
-            dignissimos velit recusandae perspiciatis distinctio culpa cum atque dolorem rem animi, laudantium, error
-            architecto? Officiis, perspiciatis veniam.
-        </p>
-    </div>
-    <div class="p-5 border">
-        <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, expedita ipsam voluptate cupiditate
-            dignissimos velit recusandae perspiciatis distinctio culpa cum atque dolorem rem animi, laudantium, error
-            architecto? Officiis, perspiciatis veniam.
-        </p>
-    </div>
+</div>
+<!-- 
+    <router-outlet></router-outlet> -->
+    
+    <!-- <div class="row justify-content-evenly">
+        <div class="col-md-3 m-1" [ngClass]="{'d-none':activo=='telares'}">
+        
+            <div class="card" style="width: 18rem;">
+                <img src="https://http2.mlstatic.com/D_NQ_NP_781345-MLA30328563310_052019-O.webp" class="card-img-top"
+                    alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">PRIMERO - Telar Cuadrado 20x20cm - Fibrofácil</h5>
+                    <p class="card-text">Telar bastidor artesanal fijo
+
+                        Medidas: 20 x 20 cm.
+                        Material: MDF de 15 mm. de espesor y clavos dorados de telar
+                        Distancia entre clavos: 1cm
+
+                        Telar fabricado artesanalmente. Apto para gran variedad de técnicas de confección.
+
+                        Se retira por Villa Lugano, CABA. Se realiza envíos.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 m-1" [ngClass]="{'d-none':activo=='agujas'}">
+
+            <div class="card" style="width: 18rem;">
+                <img src="https://http2.mlstatic.com/D_NQ_NP_781345-MLA30328563310_052019-O.webp" class="card-img-top"
+                    alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">AGUJAS - Telar Cuadrado 20x20cm - Madera</h5>
+                    <p class="card-text">Telar bastidor artesanal fijo
+
+                        Medidas: 20 x 20 cm.
+                        Material: MDF de 15 mm. de espesor y clavos dorados de telar
+                        Distancia entre clavos: 1cm
+
+                        Telar fabricado artesanalmente. Apto para gran variedad de técnicas de confección.
+
+                        Se retira por Villa Lugano, CABA. Se realiza envíos.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 m-1" [ngClass]="{'d-none':activo=='accesorios'}">
+
+            <div class="card" style="width: 18rem;">
+                <img src="https://http2.mlstatic.com/D_NQ_NP_781345-MLA30328563310_052019-O.webp" class="card-img-top"
+                    alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">ACCESORIOS - Telar Cuadrado 20x20cm - Madera</h5>
+                    <p class="card-text">Telar bastidor artesanal fijo
+
+                        Medidas: 20 x 20 cm.
+                        Material: MDF de 15 mm. de espesor y clavos dorados de telar
+                        Distancia entre clavos: 1cm
+
+                        Telar fabricado artesanalmente. Apto para gran variedad de técnicas de confección.
+
+                        Se retira por Villa Lugano, CABA. Se realiza envíos.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 m-1" [ngClass]="{'d-none':activo=='infantil'}">
+
+            <div class="card" style="width: 18rem;">
+                <img src="https://http2.mlstatic.com/D_NQ_NP_781345-MLA30328563310_052019-O.webp" class="card-img-top"
+                    alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">INFANTIL - Telar Cuadrado 20x20cm - Madera</h5>
+                    <p class="card-text">Telar bastidor artesanal fijo
+
+                        Medidas: 20 x 20 cm.
+                        Material: MDF de 15 mm. de espesor y clavos dorados de telar
+                        Distancia entre clavos: 1cm
+
+                        Telar fabricado artesanalmente. Apto para gran variedad de técnicas de confección.
+
+                        Se retira por Villa Lugano, CABA. Se realiza envíos.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+        </div>        
+    </div> -->
+
+    <!-- <div class="row justify-content-evenly">
+        <div class="col-md-3 m-1" *ngIf="telares">
+        
+            <div class="card" style="width: 18rem;">
+                <img src="https://http2.mlstatic.com/D_NQ_NP_781345-MLA30328563310_052019-O.webp" class="card-img-top"
+                    alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">PRIMERO - Telar Cuadrado 20x20cm - Fibrofácil</h5>
+                    <p class="card-text">Telar bastidor artesanal fijo
+
+                        Medidas: 20 x 20 cm.
+                        Material: MDF de 15 mm. de espesor y clavos dorados de telar
+                        Distancia entre clavos: 1cm
+
+                        Telar fabricado artesanalmente. Apto para gran variedad de técnicas de confección.
+
+                        Se retira por Villa Lugano, CABA. Se realiza envíos.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 m-1" *ngIf="agujas">
+
+            <div class="card" style="width: 18rem;">
+                <img src="https://http2.mlstatic.com/D_NQ_NP_781345-MLA30328563310_052019-O.webp" class="card-img-top"
+                    alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">AGUJAS - Telar Cuadrado 20x20cm - Madera</h5>
+                    <p class="card-text">Telar bastidor artesanal fijo
+
+                        Medidas: 20 x 20 cm.
+                        Material: MDF de 15 mm. de espesor y clavos dorados de telar
+                        Distancia entre clavos: 1cm
+
+                        Telar fabricado artesanalmente. Apto para gran variedad de técnicas de confección.
+
+                        Se retira por Villa Lugano, CABA. Se realiza envíos.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 m-1" *ngIf="accesorios">
+
+            <div class="card" style="width: 18rem;">
+                <img src="https://http2.mlstatic.com/D_NQ_NP_781345-MLA30328563310_052019-O.webp" class="card-img-top"
+                    alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">ACCESORIOS - Telar Cuadrado 20x20cm - Madera</h5>
+                    <p class="card-text">Telar bastidor artesanal fijo
+
+                        Medidas: 20 x 20 cm.
+                        Material: MDF de 15 mm. de espesor y clavos dorados de telar
+                        Distancia entre clavos: 1cm
+
+                        Telar fabricado artesanalmente. Apto para gran variedad de técnicas de confección.
+
+                        Se retira por Villa Lugano, CABA. Se realiza envíos.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 m-1" *ngIf="infantil">
+
+            <div class="card" style="width: 18rem;">
+                <img src="https://http2.mlstatic.com/D_NQ_NP_781345-MLA30328563310_052019-O.webp" class="card-img-top"
+                    alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">INFANTIL - Telar Cuadrado 20x20cm - Madera</h5>
+                    <p class="card-text">Telar bastidor artesanal fijo
+
+                        Medidas: 20 x 20 cm.
+                        Material: MDF de 15 mm. de espesor y clavos dorados de telar
+                        Distancia entre clavos: 1cm
+
+                        Telar fabricado artesanalmente. Apto para gran variedad de técnicas de confección.
+
+                        Se retira por Villa Lugano, CABA. Se realiza envíos.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+        </div>        
+    </div> -->
+
+
 </div>
